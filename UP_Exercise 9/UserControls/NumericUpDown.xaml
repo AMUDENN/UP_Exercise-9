@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="UP_Exercise_9.NumericUpDown"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:UP_Exercise_9"
+             mc:Ignorable="d" 
+             d:DesignHeight="42" d:DesignWidth="112">
+    <Border BorderThickness="1" BorderBrush="Black">
+        <StackPanel Orientation="Horizontal" Width="110" Height="40">
+            <TextBox x:Name="Num" Text="0" PreviewTextInput="NumPreviewTextInput" Style="{DynamicResource TextBoxStyle}" Width="80" Height="40"/>
+            <StackPanel Orientation="Vertical" Width="30"  Height="40" >
+                <RepeatButton Content="↑" Click="UpButtonClick" Style="{DynamicResource RepeatButtonStyle}" Width="30" Height="20"/>
+                <RepeatButton Content="↓" Click="DownButtonClick" Style="{DynamicResource RepeatButtonStyle}" Width="30" Height="20"/>
+            </StackPanel>
+        </StackPanel>
+    </Border>
+</UserControl>
